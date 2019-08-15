@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_current_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前目录下搜索"/>
+
+        <RadioButton
+            android:id="@+id/rb_whole_path"
+            android:text="在整个目录中搜索"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文件或者文件夹名字"
+        android:singleLine="true"/>
+
+
+</LinearLayout>
